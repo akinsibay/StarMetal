@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace StarMetal
 {
     public partial class GostergePaneli : Form
-    { //testt
+    { 
         string kalibFile = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\")) + @"DataFiles\KalibrasyonData.json";
         string setupFile = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\")) + @"DataFiles\SetupData.json";
         string seciliMalzemeFile = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\")) + @"DataFiles\SeciliMalzeme.json";
