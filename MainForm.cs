@@ -80,12 +80,6 @@ namespace StarMetal
                                 
         }     
 
-        private void serialCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            arduino.PortName = serialCombo.SelectedItem.ToString();         
-        }
-      
-
         private void motorDurdurBtn_Click(object sender, EventArgs e)
         {
             arduino.Close();
