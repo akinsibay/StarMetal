@@ -19,6 +19,7 @@ namespace StarMetal
     {
         string formulOutputFile = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\")) + @"DataFiles\FormulOutput.json";
         string kalibFile = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\")) + @"DataFiles\KalibrasyonData.json";
+        string seriSettingsFile = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\")) + @"DataFiles\SeriPortSettings.json";
         public MainForm()
         {
             InitializeComponent();
@@ -26,24 +27,10 @@ namespace StarMetal
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            string[] portlar = SerialPort.GetPortNames();
-            foreach (string port in portlar)
-            {
-                serialCombo.Items.Add(port);
-            }
-
-        }
-
-        private void goDashboard_Click(object sender, EventArgs e)
-        {
-            GostergePaneli gostergePaneli = new GostergePaneli();
-            gostergePaneli.Show();
-        }
-
-        private void goSetup_Click(object sender, EventArgs e)
-        {
-            SetupDegerleri setup = new SetupDegerleri();
-            setup.Show();
+            dynamic settings = JsonConvert.DeserializeObject<dynamic>(File.ReadAllText(seriSettingsFile));
+            string portInfo = settings["COMPort"].ToString();
+            portInfoLbl.Text = portInfo;
+            arduino.PortName = portInfo;
         }
 
         private void motorBaslatBtn_Click(object sender, EventArgs e)
@@ -116,6 +103,12 @@ namespace StarMetal
         {
             SetupDegerleri setup = new SetupDegerleri();
             setup.Show();
+        }
+
+        private void seriPortAyarlarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SeriPortAyarlari seriPort = new SeriPortAyarlari();
+            seriPort.Show();
         }
     }
 }

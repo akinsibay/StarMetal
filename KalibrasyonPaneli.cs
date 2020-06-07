@@ -92,7 +92,7 @@ namespace StarMetal
                 ksu.Text = data["ksu"].ToString();
                 kam.Text = data["kam"].ToString();
                 suDebisi.Text = data["suDebisi"].ToString();
-            });           
+            });
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -41,6 +41,8 @@
             this.değerGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayarlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seriPortAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.portInfoLbl = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,10 +101,10 @@
             // motorStatusLbl
             // 
             this.motorStatusLbl.AutoSize = true;
-            this.motorStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.motorStatusLbl.Location = new System.Drawing.Point(12, 373);
+            this.motorStatusLbl.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.motorStatusLbl.Location = new System.Drawing.Point(750, 379);
             this.motorStatusLbl.Name = "motorStatusLbl";
-            this.motorStatusLbl.Size = new System.Drawing.Size(85, 29);
+            this.motorStatusLbl.Size = new System.Drawing.Size(84, 28);
             this.motorStatusLbl.TabIndex = 10;
             this.motorStatusLbl.Text = "label2";
             // 
@@ -147,12 +149,36 @@
             this.seriPortAyarlarıToolStripMenuItem.Name = "seriPortAyarlarıToolStripMenuItem";
             this.seriPortAyarlarıToolStripMenuItem.Size = new System.Drawing.Size(225, 30);
             this.seriPortAyarlarıToolStripMenuItem.Text = "Seri Port Ayarları";
+            this.seriPortAyarlarıToolStripMenuItem.Click += new System.EventHandler(this.seriPortAyarlarıToolStripMenuItem_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(12, 379);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(180, 28);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Çalışma Portu:";
+            // 
+            // portInfoLbl
+            // 
+            this.portInfoLbl.AutoSize = true;
+            this.portInfoLbl.BackColor = System.Drawing.Color.Goldenrod;
+            this.portInfoLbl.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.portInfoLbl.Location = new System.Drawing.Point(198, 379);
+            this.portInfoLbl.Name = "portInfoLbl";
+            this.portInfoLbl.Size = new System.Drawing.Size(84, 28);
+            this.portInfoLbl.TabIndex = 13;
+            this.portInfoLbl.Text = "label3";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 417);
+            this.Controls.Add(this.portInfoLbl);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.motorStatusLbl);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
@@ -186,5 +212,7 @@
         private System.Windows.Forms.ToolStripMenuItem değerGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayarlarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seriPortAyarlarıToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label portInfoLbl;
     }
 }

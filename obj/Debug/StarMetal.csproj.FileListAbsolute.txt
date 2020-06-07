@@ -32,3 +32,4 @@ E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.Prope
 E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.YeniSetup.resources
 E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.exe
 E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.pdb
+E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.SeriPortAyarlari.resources
