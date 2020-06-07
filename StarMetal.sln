@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarMetal", "StarMetal.csproj", "{22C07E32-AD6C-48EB-9592-A404B91E6491}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22C07E32-AD6C-48EB-9592-A404B91E6491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C07E32-AD6C-48EB-9592-A404B91E6491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C07E32-AD6C-48EB-9592-A404B91E6491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C07E32-AD6C-48EB-9592-A404B91E6491}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E2B8A6C-9D3A-4916-9C4F-9BC9F8FF62EF}
+	EndGlobalSection
+EndGlobal
