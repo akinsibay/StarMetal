@@ -14,11 +14,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EasyModbus;
+using System.Diagnostics;
+
 namespace StarMetal
 {
     
     public partial class MainForm : Form
     {
+        Process process = new Process();
         ModbusClient modbusClient;
         public int[] _holdings;
         
@@ -51,6 +54,7 @@ namespace StarMetal
 
         private void motorBaslatBtn_Click(object sender, EventArgs e)
         {
+            RunCamera();
             ExceptionManagement.HandleException(() =>
             {
                 motorStatusLbl.Visible = true;
@@ -107,6 +111,7 @@ namespace StarMetal
 
         private void motorDurdurBtn_Click(object sender, EventArgs e)
         {
+            StopCamera();
             try
             {
                 arduino.Write("STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP");
@@ -158,5 +163,20 @@ namespace StarMetal
             }
 
         }
+
+        private void RunCamera()
+        {
+            
+            process.StartInfo.FileName = @"C:\Users\Otomasyon\Desktop\AcquisitionImage\bin\Debug\AcquisitionImage.exe";
+            //CONSOLE EKRANININ GÖRÜNMEMESİ İÇİN
+            process.StartInfo.CreateNoWindow = true;
+            process.StartInfo.UseShellExecute = false;
+            process.Start();
+        }
+        private void StopCamera()
+        {
+            process.Kill();
+        }
+
     }
 }

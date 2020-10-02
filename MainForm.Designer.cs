@@ -38,9 +38,9 @@
             this.değerGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayarlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seriPortAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manuelSürmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.portInfoLbl = new System.Windows.Forms.Label();
-            this.manuelSürmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phLbl = new System.Windows.Forms.Label();
             this.modbusTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,9 +55,9 @@
             this.motorBaslatBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(170)))), ((int)(((byte)(0)))));
             this.motorBaslatBtn.FlatAppearance.BorderSize = 0;
             this.motorBaslatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.motorBaslatBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.motorBaslatBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.motorBaslatBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.motorBaslatBtn.Location = new System.Drawing.Point(50, 115);
+            this.motorBaslatBtn.Location = new System.Drawing.Point(55, 115);
             this.motorBaslatBtn.Name = "motorBaslatBtn";
             this.motorBaslatBtn.Size = new System.Drawing.Size(238, 126);
             this.motorBaslatBtn.TabIndex = 3;
@@ -70,9 +70,9 @@
             this.motorDurdurBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.motorDurdurBtn.FlatAppearance.BorderSize = 0;
             this.motorDurdurBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.motorDurdurBtn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.motorDurdurBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.motorDurdurBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.motorDurdurBtn.Location = new System.Drawing.Point(382, 115);
+            this.motorDurdurBtn.Location = new System.Drawing.Point(325, 115);
             this.motorDurdurBtn.Name = "motorDurdurBtn";
             this.motorDurdurBtn.Size = new System.Drawing.Size(249, 126);
             this.motorDurdurBtn.TabIndex = 4;
@@ -83,10 +83,10 @@
             // motorStatusLbl
             // 
             this.motorStatusLbl.AutoSize = true;
-            this.motorStatusLbl.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.motorStatusLbl.Location = new System.Drawing.Point(470, 26);
+            this.motorStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.motorStatusLbl.Location = new System.Drawing.Point(401, 26);
             this.motorStatusLbl.Name = "motorStatusLbl";
-            this.motorStatusLbl.Size = new System.Drawing.Size(195, 23);
+            this.motorStatusLbl.Size = new System.Drawing.Size(218, 24);
             this.motorStatusLbl.TabIndex = 10;
             this.motorStatusLbl.Text = "BAĞLANTI KAPATILDI";
             this.motorStatusLbl.Visible = false;
@@ -102,14 +102,14 @@
             this.manuelSürmeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(688, 38);
+            this.menuStrip1.Size = new System.Drawing.Size(631, 38);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // göstergePaneliToolStripMenuItem
             // 
             this.göstergePaneliToolStripMenuItem.Name = "göstergePaneliToolStripMenuItem";
-            this.göstergePaneliToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
+            this.göstergePaneliToolStripMenuItem.Size = new System.Drawing.Size(177, 34);
             this.göstergePaneliToolStripMenuItem.Text = "Gösterge Paneli";
             this.göstergePaneliToolStripMenuItem.Click += new System.EventHandler(this.göstergePaneliToolStripMenuItem_Click);
             // 
@@ -131,30 +131,9 @@
             // seriPortAyarlarıToolStripMenuItem
             // 
             this.seriPortAyarlarıToolStripMenuItem.Name = "seriPortAyarlarıToolStripMenuItem";
-            this.seriPortAyarlarıToolStripMenuItem.Size = new System.Drawing.Size(247, 34);
+            this.seriPortAyarlarıToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
             this.seriPortAyarlarıToolStripMenuItem.Text = "Seri Port Ayarları";
             this.seriPortAyarlarıToolStripMenuItem.Click += new System.EventHandler(this.seriPortAyarlarıToolStripMenuItem_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(12, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 23);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Çalışma Portu:";
-            // 
-            // portInfoLbl
-            // 
-            this.portInfoLbl.AutoSize = true;
-            this.portInfoLbl.BackColor = System.Drawing.Color.Goldenrod;
-            this.portInfoLbl.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.portInfoLbl.Location = new System.Drawing.Point(158, 27);
-            this.portInfoLbl.Name = "portInfoLbl";
-            this.portInfoLbl.Size = new System.Drawing.Size(69, 23);
-            this.portInfoLbl.TabIndex = 13;
-            this.portInfoLbl.Text = "label3";
             // 
             // manuelSürmeToolStripMenuItem
             // 
@@ -163,14 +142,35 @@
             this.manuelSürmeToolStripMenuItem.Text = "Manuel Sürme";
             this.manuelSürmeToolStripMenuItem.Click += new System.EventHandler(this.manuelSürmeToolStripMenuItem_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(12, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 24);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Çalışma Portu:";
+            // 
+            // portInfoLbl
+            // 
+            this.portInfoLbl.AutoSize = true;
+            this.portInfoLbl.BackColor = System.Drawing.Color.Goldenrod;
+            this.portInfoLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.portInfoLbl.Location = new System.Drawing.Point(158, 27);
+            this.portInfoLbl.Name = "portInfoLbl";
+            this.portInfoLbl.Size = new System.Drawing.Size(66, 24);
+            this.portInfoLbl.TabIndex = 13;
+            this.portInfoLbl.Text = "label3";
+            // 
             // phLbl
             // 
             this.phLbl.AutoSize = true;
             this.phLbl.BackColor = System.Drawing.Color.Goldenrod;
-            this.phLbl.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.phLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.phLbl.Location = new System.Drawing.Point(286, 12);
             this.phLbl.Name = "phLbl";
-            this.phLbl.Size = new System.Drawing.Size(41, 28);
+            this.phLbl.Size = new System.Drawing.Size(48, 29);
             this.phLbl.TabIndex = 15;
             this.phLbl.Text = "PH";
             // 
@@ -187,7 +187,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(688, 51);
+            this.panel1.Size = new System.Drawing.Size(631, 51);
             this.panel1.TabIndex = 16;
             // 
             // panel2
@@ -199,7 +199,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 267);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(688, 57);
+            this.panel2.Size = new System.Drawing.Size(631, 57);
             this.panel2.TabIndex = 17;
             // 
             // MainForm
@@ -207,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(688, 324);
+            this.ClientSize = new System.Drawing.Size(631, 324);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.motorDurdurBtn);

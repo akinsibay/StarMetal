@@ -71,3 +71,4 @@ C:\Users\Otomasyon\Desktop\StarMetal\obj\Debug\StarMetal.csproj.CoreCompileInput
 C:\Users\Otomasyon\Desktop\StarMetal\obj\Debug\StarMetal.csproj.CopyComplete
 C:\Users\Otomasyon\Desktop\StarMetal\obj\Debug\StarMetal.exe
 C:\Users\Otomasyon\Desktop\StarMetal\obj\Debug\StarMetal.pdb
+C:\Users\Otomasyon\Desktop\StarMetal\bin\Debug\SpinnakerNET_v140.dll
