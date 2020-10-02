@@ -33,3 +33,23 @@ E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.YeniS
 E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.exe
 E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.pdb
 E:\Projeler\C# Projects\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.SeriPortAyarlari.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\bin\Debug\StarMetal.exe.config
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\bin\Debug\StarMetal.exe
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\bin\Debug\StarMetal.pdb
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\bin\Debug\Newtonsoft.Json.dll
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\bin\Debug\Newtonsoft.Json.xml
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.csprojAssemblyReference.cache
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.GostergePaneli.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.SeriPortAyarlari.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.SetupDegerleri.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.KalibrasyonPaneli.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.MainForm.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.Properties.Resources.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.YeniSetup.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.csproj.GenerateResource.cache
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.csproj.CoreCompileInputs.cache
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.csproj.CopyComplete
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.exe
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.pdb
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\obj\Debug\StarMetal.ManuelSürme.resources
+D:\Projeler\Sample\C#\AkınStudy\StarMetal\StarMetal\bin\Debug\EasyModbus.dll

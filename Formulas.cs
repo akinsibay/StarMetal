@@ -141,43 +141,43 @@ namespace StarMetal
 
         public static long aStepSayisi(double aPeristaltik,int kaplamaSuresi,double ka,int oneRev)
         {
-            return Convert.ToInt64(aPeristaltik * kaplamaSuresi*ka*oneRev);
+            return Convert.ToInt64((aPeristaltik * kaplamaSuresi*oneRev)/ka);
         }
         public static double aHiz(double aPeristaltik,double ka,int oneRev)
         {
-            return aPeristaltik * ((oneRev * ka) / 60);
+            return aPeristaltik * ((oneRev/ka) / 60);
         }
         public static long bStepSayisi(double bPeristaltik, int kaplamaSuresi, double kb, int oneRev)
         {
-            return Convert.ToInt64(bPeristaltik * kaplamaSuresi * kb * oneRev);
+            return Convert.ToInt64((bPeristaltik * kaplamaSuresi * oneRev * 10)/ kb);
         }
         public static double bHiz(double bPeristaltik, double kb, int oneRev)
         {
-            return bPeristaltik * ((oneRev * kb) / 60);
+            return bPeristaltik * ((oneRev / kb * 10) / 60);
         }
         public static long cStepSayisi(double cPeristaltik, int kaplamaSuresi, double kc, int oneRev)
         {
-            return Convert.ToInt64(cPeristaltik * kaplamaSuresi * kc * oneRev);
+            return Convert.ToInt64((cPeristaltik * kaplamaSuresi * oneRev)/ kc);
         }
         public static double cHiz(double cPeristaltik, double kc, int oneRev)
         {
-            return cPeristaltik * ((oneRev * kc) / 60);
+            return cPeristaltik * ((oneRev / kc) / 60);
         }
         public static long suStepSayisi(double suPeristaltik, int kaplamaSuresi, double ksu, int oneRev)
         {
-            return Convert.ToInt64(suPeristaltik * kaplamaSuresi * ksu * oneRev);
+            return Convert.ToInt64((suPeristaltik * kaplamaSuresi * oneRev)/ ksu);
         }
         public static double suHiz(double suPeristaltik, double ksu, int oneRev)
         {
-            return suPeristaltik * ((oneRev * ksu) / 60);
+            return suPeristaltik * ((oneRev / ksu) / 60);
         }
         public static long amStepSayisi(double amPeristaltik, int kaplamaSuresi, double kam, int oneRev)
         {
-            return Convert.ToInt64(amPeristaltik * kaplamaSuresi * kam * oneRev);
+            return Convert.ToInt64((amPeristaltik * kaplamaSuresi * oneRev)/ kam);
         }
         public static double amHiz(double amPeristaltik, double kam, int oneRev)
         {
-            return amPeristaltik * ((oneRev * kam) / 60);
+            return amPeristaltik * ((oneRev / kam) / 60);
         }
 
     }

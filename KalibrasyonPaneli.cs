@@ -95,12 +95,6 @@ namespace StarMetal
             });
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.ShowDialog();
-        }
-
         private void kaydetBtn_Click(object sender, EventArgs e)
         {                     
             ExceptionManagement.HandleException(() =>
