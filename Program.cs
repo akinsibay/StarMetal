@@ -14,7 +14,6 @@ namespace StarMetal
         [STAThread]
         static void Main()
         {
-            //comment
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
