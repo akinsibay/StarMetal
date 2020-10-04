@@ -8,6 +8,9 @@ namespace StarMetal
 {
     class CalibrationData
     {
-       public static int banyoHacmi, aUst, aAlt;
+       //public static int banyoHacmi, aUst, aAlt;
+        public int banyoHacmi { get; set; }
+        public int aUst { get; set; }
+        public int aAlt { get; set; }
     }
 }

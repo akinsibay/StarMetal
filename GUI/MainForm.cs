@@ -53,10 +53,10 @@ namespace StarMetal
         }
 
         private void motorBaslatBtn_Click(object sender, EventArgs e)
-        {
-            RunCamera();
+        {     
             ExceptionManagement.HandleException(() =>
             {
+                RunCamera();
                 motorStatusLbl.Visible = true;
                 dynamic formulData = JsonConvert.DeserializeObject<dynamic>(File.ReadAllText(formulOutputFile));
                 dynamic kalibData = JsonConvert.DeserializeObject<dynamic>(File.ReadAllText(kalibFile));
@@ -99,6 +99,7 @@ namespace StarMetal
                     //arduino.Write("21.2*57348*6*16470*21.2*57348*0.6*27000*400.0*800");
                     arduino.Write("42.2*57348*6.1*16475*21.2*57348*10.0*27000*80.0*8000");
                     Thread.Sleep(10);
+                    arduino.DiscardInBuffer(); //yeni eklendi
                     //string arduinodanGelen = arduino.ReadLine();
                     //label1.Text = arduinodanGelen;
                     //listBox1.Items.Add(arduinodanGelen);
@@ -111,20 +112,16 @@ namespace StarMetal
 
         private void motorDurdurBtn_Click(object sender, EventArgs e)
         {
-            StopCamera();
-            try
+            ExceptionManagement.HandleException(() =>
             {
+                StopCamera();
                 arduino.Write("STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP*STOP");
                 Thread.Sleep(2000);
+                arduino.DiscardInBuffer(); //yeni eklendi
                 arduino.Close();
                 motorStatusLbl.Text = "BAĞLANTI KAPATILDI";
                 motorStatusLbl.ForeColor = Color.Red;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Bağlantı zaten kapalı");
-            }
-            
+            });         
         }
 
         private void göstergePaneliToolStripMenuItem_Click(object sender, EventArgs e)
@@ -165,8 +162,7 @@ namespace StarMetal
         }
 
         private void RunCamera()
-        {
-            
+        {      
             process.StartInfo.FileName = @"C:\Users\Otomasyon\Desktop\AcquisitionImage\bin\Debug\AcquisitionImage.exe";
             //CONSOLE EKRANININ GÖRÜNMEMESİ İÇİN
             process.StartInfo.CreateNoWindow = true;

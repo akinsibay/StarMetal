@@ -20,6 +20,10 @@ namespace StarMetal
 			{
                 MessageBox.Show("Girdiğiniz değerlerden biri uygun formatta değil. Kontrol ediniz!");
             }
+            catch (InvalidOperationException e)
+            {
+                MessageBox.Show(e.Message);
+            }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
