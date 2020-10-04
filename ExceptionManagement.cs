@@ -28,7 +28,6 @@ namespace StarMetal
             {
                 MessageBox.Show(e.Message);
             }
-            //test
         }
     }
 }
